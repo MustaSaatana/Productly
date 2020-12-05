@@ -1,5 +1,44 @@
-.container {
-  max-width: w1224;
-  margin-left: auto;
-  margin-right: auto;
+*{
+  box-sizing: border-box;
 }
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+ .header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .menu__list {
+   display: flex;
+ }
+
+ .menu__list-item + .menu__list-item {
+   margin-left: 24px;
+ }
+
+ .menu__list-link {
+  color: #2F281E;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+ }
+
+ .user-nav {
+   margin-left: 52px;
+   margin-right: 13px;
+ }
+
+ .user-nav__link + .user-nav__link {
+  margin-left: 14px;
+ }
+
