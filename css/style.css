@@ -77,8 +77,11 @@ button  {
   color: #fff;
  }
 
-.top {
+.top__inner {
   padding: 133px 0 80px;
+  background-image: url(../images/top_bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .top__title {
@@ -125,5 +128,5 @@ button  {
   width: 17px;
   height: 19px;
   background-image: url(../images/play_icon.svg);
-
 }
+
