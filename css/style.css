@@ -10,6 +10,7 @@ body {
   line-height: 26px;
 }
 
+
 button {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -37,7 +38,39 @@ button {
  .menu {
    margin-left: auto;
  }
+
+ .menu__btn {
+   display: none;
+  width: 40px;
+  height: 30px;
+
+ }
+
+ .menu__btn span {
+   display: block;
+   background-color: #000;
+   height: 2px;
+   width: 100%;
+ }
+
+ .menu__btn::before,
+ .menu__btn::after{
+   content:"";
+   background-color: #000;
+   width: 40px;
+   height: 2px;
+   position: absolute;
+   left: 0;
+ }
+
+ .menu__btn::before{
+  top: 0;
+ }
  
+ .menu__btn::after{
+  bottom: 0;
+ }
+
  .menu__list {
    display: flex;
  }
@@ -330,7 +363,7 @@ margin-bottom: 45px;
   border-radius: 26px;
   position: absolute;
   top: -41px;
-  right: 63px;
+  right: 70px;
   white-space: nowrap;
 }
 .team__item-text.team__item-text--left {
@@ -390,7 +423,7 @@ margin-bottom: 45px;
 }
 
 .slider{
-  margin: 0 -20px;
+  margin: 0;
 }
 
 .slider__item{
@@ -452,10 +485,6 @@ margin-bottom: 45px;
   background-color: #ff9900;
 }
 
-.footer{
-
-}
-
 .footer__inner{
   padding: 105px 0 100px;
   border-top: 1px solid rgba(188, 208, 229, 0.496913);
@@ -477,10 +506,6 @@ margin-bottom: 45px;
 
 .footer__list{
   list-style: none;
-}
-
-.footer__list-item{
-
 }
 
 .footer__list-link{
@@ -517,3 +542,4 @@ margin-bottom: 45px;
   border-radius: 4px;
   border: none;
 }
+
